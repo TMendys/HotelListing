@@ -1,3 +1,4 @@
+using HotelListing.Configurations;
 using HotelListing.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,8 +33,6 @@ namespace HotelListing
                 options.UseSqlServer(Configuration.GetConnectionString("sqlConnection"))
             );
 
-
-
             services.AddCors(options => {
                 options.AddPolicy("AllowAll", builder =>
                     builder.AllowAnyOrigin()
@@ -41,6 +40,8 @@ namespace HotelListing
                     .AllowAnyMethod()
                 );
             });
+
+            services.AddAutoMapper(typeof(MapperInitializer));
 
             services.AddSwaggerGen(c =>
             {

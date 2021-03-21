@@ -42,7 +42,7 @@ namespace HotelListing.Data
                 {
                     Id = 1,
                     Name = "Sandals Resort and Spa",
-                    Adress = "Negril",
+                    Address = "Negril",
                     CountryId = 1,
                     Rating = 4.5
                 },
@@ -50,7 +50,7 @@ namespace HotelListing.Data
                 {
                     Id = 2,
                     Name = "Comfort Suites",
-                    Adress = "George Town",
+                    Address = "George Town",
                     CountryId = 3,
                     Rating = 4.3
                 },
@@ -58,7 +58,7 @@ namespace HotelListing.Data
                 {
                     Id = 3,
                     Name = "Grand Palldium",
-                    Adress = "Nassu",
+                    Address = "Nassu",
                     CountryId = 2,
                     Rating = 4
                 }

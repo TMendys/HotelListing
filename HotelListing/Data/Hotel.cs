@@ -12,7 +12,7 @@ namespace HotelListing.Data
 
         public string Name { get; set; }
 
-        public string Adress { get; set; }
+        public string Address { get; set; }
 
         public double Rating { get; set; }
 
